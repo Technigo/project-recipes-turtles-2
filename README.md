@@ -10,3 +10,5 @@ All data should be fetched from the [Edamam API](https://developer.edamam.com/ed
 
 ## Foodora
 https://www.notion.so/technigo/Foodora-f2dfa7e7d4c14aad871dd3295c97c281
+
+
