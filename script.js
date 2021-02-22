@@ -14,11 +14,16 @@ const fetchRecipes = () => {
         const hits = json.hits;
         hits.forEach((item) => {
             recipeList.innerHTML += `
-            <h1>${item.recipe.label}</h1>
-            <p>Cooking time: ${item.recipe.totalTime} min.</p>
-            <img src=${item.recipe.image}>
-            <p>Ingredients: ${item.recipe.ingredientLines}</p>
-            <a href="${item.recipe.url}">Check out the link to the recipe!</a>
+            <div class="recipe-card">
+                <a href="${item.recipe.url}">
+                    <img class="card-img" src=${item.recipe.image}>
+                    <div class="card-text">
+                        <p class="card-label">${item.recipe.label}</p>
+                        <p class="card-cooking-time">Cooking time: ${item.recipe.totalTime} min.</p>
+                        <p class="card-ingredients">Ingredients: ${item.recipe.ingredientLines}</p>
+                    </div>
+                </a>
+            </div>
           `
         })
       })
