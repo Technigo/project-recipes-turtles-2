@@ -6993,7 +6993,13 @@ const fetchRecipes = (searchTerm) => {
         })
       })
     }
-    //fetchRecipes('food');
+    //Ask if we should keep this or not
+    //fetchRecipes('');
+
+    // Add Next time:
+    // 1. Restart button
+    // 2. Add styling - maybe keep the buttons and be able to sort again? 
+    // 3. Add functions to fetch recepies 
 
     fishBtn.addEventListener('click', () => fetchRecipes('fish'))
     chickenBtn.addEventListener('click', () => fetchRecipes('chicken'))
