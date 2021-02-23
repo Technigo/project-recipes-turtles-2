@@ -2,19 +2,53 @@
 font-family: Arial, Helvetica, sans-serif;
 }
 
+.top-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.nav-img {
+    width: 24px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #d70f64;
+    /* font-weight: bold; */
+    font-size: 22px;
+}
+
+.main-title-container {
+    margin: 110px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.main-title {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0;
+}
+
 .option-button {
     display: flex;
     justify-content: space-between;
-    margin: 0 170px;
+    flex-wrap: wrap;
+    max-width: 778px;
 }
 
 .filter-button {
     background-color: #d70f64;
     border: none;
     color: #fff;
+    margin-bottom: 10px;
     padding: 10px;
-    width: 150px;
+    width: 49%;
     height: 64px;
-    font-size: 18px;
+    font-size: 11px;
     font-weight: bold;
 }
