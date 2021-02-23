@@ -6981,12 +6981,11 @@ const fetchRecipes = (searchTerm) => {
           // recipeList.innerHTML ="" 
             recipeList.innerHTML += `
             <div class="recipe-card">
-                <a href="${item.recipe.url}">
+                <a class="recipe-card-link" href="${item.recipe.url}">
                     <img class="card-img" src=${item.recipe.image}>
                     <div class="card-text">
                         <p class="card-label">${item.recipe.label}</p>
                         <p class="card-cooking-time">Cooking time: ${item.recipe.totalTime} min.</p>
-                        <p class="card-ingredients">Ingredients: ${item.recipe.ingredientLines}</p>
                     </div>
                 </a>
             </div>
@@ -6994,6 +6993,7 @@ const fetchRecipes = (searchTerm) => {
         })
       })
     }
+    //<p class="card-ingredients">Ingredients: ${item.recipe.ingredientLines}</p>
     //Ask if we should keep this or not
     //fetchRecipes('');
 

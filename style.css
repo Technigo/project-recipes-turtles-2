@@ -1,23 +1,29 @@
 .body {
-font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin:0;
 }
 
 .top-navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px;
+    margin: 15px 0;
+    box-shadow: rgb(50 50 93 / 10%) 1px 11px 13px 2px, 
+                rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+    padding-bottom: 10px;
+    
 }
 
 .nav-img {
     width: 24px;
+    margin: 0 15px 0 15px;
 }
 
 .logo {
     text-decoration: none;
     color: #d70f64;
-    /* font-weight: bold; */
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .main-title-container {
@@ -38,7 +44,8 @@ font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 778px;
+    max-width: 767px;
+    margin: 0 25px 70px 25px;
 }
 
 .filter-button {
@@ -51,4 +58,70 @@ font-family: Arial, Helvetica, sans-serif;
     height: 64px;
     font-size: 11px;
     font-weight: bold;
+    
 }
+
+.recipe-list-section{
+    max-width: 767px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 25px 25px 25px;
+}
+
+.recipe-card-link {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.recipe-card {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    align-items: center;
+    margin-bottom: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    /* padding-top: 10px; */
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-label {
+    font-weight: bold;
+    margin-bottom:0;
+    padding-left: 16px;
+}
+
+.card-cooking-time {
+    margin-top: 5px;
+    font-style: italic;
+    padding-left: 16px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #F4F4F4;
+    ;
+  }
+  .footer-text {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .footer-links {
+    text-decoration: none;
+    font-size: 10px;
+  }
+  .footer-links a {
+    color: black;
+  }
+  .footer-links a:hover {
+    color: #536DFE;
+  }
