@@ -6978,6 +6978,7 @@ const fetchRecipes = (searchTerm) => {
       .then ((json) => {
         const hits = json.hits;
         hits.forEach((item) => {
+          // recipeList.innerHTML ="" 
             recipeList.innerHTML += `
             <div class="recipe-card">
                 <a href="${item.recipe.url}">
@@ -7001,7 +7002,19 @@ const fetchRecipes = (searchTerm) => {
     // 2. Add styling - maybe keep the buttons and be able to sort again? 
     // 3. Add functions to fetch recepies 
 
-    fishBtn.addEventListener('click', () => fetchRecipes('fish'))
-    chickenBtn.addEventListener('click', () => fetchRecipes('chicken'))
-    meatBtn.addEventListener('click', () => fetchRecipes('meat'))
-    vegetarianBtn.addEventListener('click', () => fetchRecipes('vegetarian'))
+    fishBtn.addEventListener('click', () => { 
+      recipeList.innerHTML =''
+      fetchRecipes('fish')
+      })
+    chickenBtn.addEventListener('click', () => { 
+      recipeList.innerHTML =''
+      fetchRecipes('chicken')
+      })
+    meatBtn.addEventListener('click', () => { 
+      recipeList.innerHTML =''
+      fetchRecipes('meat')
+      })
+    vegetarianBtn.addEventListener('click', () => { 
+      recipeList.innerHTML =''
+      fetchRecipes('vegetarian')
+      })
